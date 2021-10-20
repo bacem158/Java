@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class MainApp {
+
+	public static void main(String[] args) {
+		String mode;
+		Scanner sc = new Scanner(System.in);
+		int choix;
+		do
+		{
+			System.out.println("Entrez 1 pour convertir de Celsius en Fahrenheit");
+			System.out.println("Entrez 2 pour convertir de Fahrenheit en Celsius");
+			choix = sc.nextInt();
+		}while(choix <1 || choix > 3);
+		
+		
+
+	}
+
+}
