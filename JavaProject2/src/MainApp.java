@@ -15,21 +15,21 @@ public class MainApp {
 			choix = sc.nextInt();
 		}while(choix <1 || choix > 2);
 		
-		double température = 0 ;
-		double convertie = 0 ;
+		float température = 0 ;
+		float convertie = 0 ;
 		
 
 		if (choix==1)
 		{
 			System.out.println("Entrez la température en Celsius");
-			température = sc.nextInt();
+			température = sc.nextFloat();
 			convertie = 9/5*température+32;
 			System.out.println("La température en Fahrenheit = "+convertie);
 		}
 		else if (choix==2)
 		{
 			System.out.println("Entrez la température en Fahrenheit");
-			température = sc.nextInt();
+			température = sc.nextFloat();
 			convertie = 5/9*(température-32);
 			System.out.println("La température en Celsius = "+convertie);
 		}
